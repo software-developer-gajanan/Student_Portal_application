@@ -1,0 +1,391 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BC0A630-E48B-4D5D-9939-713E9747967A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Students_portal</RootNamespace>
+    <AssemblyName>Students portal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin1.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="adminre.aspx" />
+    <Content Include="bg img\back.jpg" />
+    <Content Include="bg img\bookstall1.jpg" />
+    <Content Include="bg img\bookstall2.jpg" />
+    <Content Include="bg img\bookstallfull.jpg" />
+    <Content Include="bg img\classes.jpg" />
+    <Content Include="bg img\classes2.jpg" />
+    <Content Include="bg img\classroom.jpg" />
+    <Content Include="bg img\classroom2.jpg" />
+    <Content Include="bg img\defence.jpg" />
+    <Content Include="bg img\eduimg.jfif" />
+    <Content Include="bg img\form2.jpg" />
+    <Content Include="bg img\form3.jpg" />
+    <Content Include="bg img\form4.jpg" />
+    <Content Include="bg img\form6.jpg" />
+    <Content Include="bg img\fr.jfif" />
+    <Content Include="bg img\gamezoon.jpg" />
+    <Content Include="bg img\hostel.jpg" />
+    <Content Include="bg img\hostel2.jpg" />
+    <Content Include="bg img\hotelb.jpg" />
+    <Content Include="bg img\hotelfr.jpg" />
+    <Content Include="bg img\laptop.jpg" />
+    <Content Include="bg img\laptop2.jpg" />
+    <Content Include="bg img\mess1.jpg" />
+    <Content Include="bg img\mess2.jpg" />
+    <Content Include="bg img\mess3.jpg" />
+    <Content Include="bg img\mobile.jpg" />
+    <Content Include="bg img\mobile2.jpg" />
+    <Content Include="bg img\program3.jpg" />
+    <Content Include="bg img\programm2.jpg" />
+    <Content Include="bg img\programming.jpg" />
+    <Content Include="bg img\statinory.jpg" />
+    <Content Include="bg img\statinory2.jpg" />
+    <Content Include="bg img\studyimg.jpg" />
+    <Content Include="bg img\xerox.jpg" />
+    <Content Include="bg img\xerox2.jpg" />
+    <Content Include="Book stall.aspx" />
+    <Content Include="Boys Hostel.aspx" />
+    <Content Include="BoysH.html" />
+    <Content Include="boyshostels.aspx" />
+    <Content Include="classes.aspx" />
+    <Content Include="dataview.aspx" />
+    <Content Include="Defence Academy.aspx" />
+    <Content Include="Directory list.aspx" />
+    <Content Include="Game Zone.aspx" />
+    <Content Include="Girls Hoste.aspx" />
+    <Content Include="Hotels.aspx" />
+    <Content Include="images\avatar 2 login.jpg" />
+    <Content Include="images\avatar std.jpg" />
+    <Content Include="images\book store.png" />
+    <Content Include="images\fr.jfif" />
+    <Content Include="images\kisspng-computer-icons-clip-art-man-icon-5aab1859648ef2.2039530715211623294119.png" />
+    <Content Include="images\predekar.jpg" />
+    <Content Include="images\Premium Photo _ Laptop screen isolated on a desk in office.jfif" />
+    <Content Include="images\register.jpg" />
+    <Content Include="images\register1.jpg" />
+    <Content Include="images\shop.png" />
+    <Content Include="images\shop2.png" />
+    <Content Include="images\stp.jpg" />
+    <Content Include="images\stp2.jpg" />
+    <Content Include="images\stp3.jpg" />
+    <Content Include="Internship.aspx" />
+    <Content Include="Laptop.aspx" />
+    <Content Include="Library.aspx" />
+    <Content Include="list img.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="MainLogin.aspx" />
+    <Content Include="Mess.aspx" />
+    <Content Include="Mobile.aspx" />
+    <Content Include="Programming.aspx" />
+    <Content Include="Stationary.aspx" />
+    <Content Include="student login.aspx" />
+    <Content Include="studentregister.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Xerox.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin1.aspx.cs">
+      <DependentUpon>Admin1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin1.aspx.designer.cs">
+      <DependentUpon>Admin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminre.aspx.cs">
+      <DependentUpon>adminre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminre.aspx.designer.cs">
+      <DependentUpon>adminre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book stall.aspx.cs">
+      <DependentUpon>Book stall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book stall.aspx.designer.cs">
+      <DependentUpon>Book stall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boys Hostel.aspx.cs">
+      <DependentUpon>Boys Hostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boys Hostel.aspx.designer.cs">
+      <DependentUpon>Boys Hostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="boyshostels.aspx.cs">
+      <DependentUpon>boyshostels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="boyshostels.aspx.designer.cs">
+      <DependentUpon>boyshostels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes.aspx.cs">
+      <DependentUpon>classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes.aspx.designer.cs">
+      <DependentUpon>classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dataview.aspx.cs">
+      <DependentUpon>dataview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dataview.aspx.designer.cs">
+      <DependentUpon>dataview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence Academy.aspx.cs">
+      <DependentUpon>Defence Academy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence Academy.aspx.designer.cs">
+      <DependentUpon>Defence Academy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory list.aspx.cs">
+      <DependentUpon>Directory list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory list.aspx.designer.cs">
+      <DependentUpon>Directory list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Game Zone.aspx.cs">
+      <DependentUpon>Game Zone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Game Zone.aspx.designer.cs">
+      <DependentUpon>Game Zone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Girls Hoste.aspx.cs">
+      <DependentUpon>Girls Hoste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Girls Hoste.aspx.designer.cs">
+      <DependentUpon>Girls Hoste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.Master.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.Master.designer.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels.aspx.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotels.aspx.designer.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Internship.aspx.cs">
+      <DependentUpon>Internship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Internship.aspx.designer.cs">
+      <DependentUpon>Internship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laptop.aspx.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laptop.aspx.designer.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Library.aspx.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library.aspx.designer.cs">
+      <DependentUpon>Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list img.aspx.cs">
+      <DependentUpon>list img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list img.aspx.designer.cs">
+      <DependentUpon>list img.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainLogin.aspx.cs">
+      <DependentUpon>MainLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainLogin.aspx.designer.cs">
+      <DependentUpon>MainLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mess.aspx.cs">
+      <DependentUpon>Mess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mess.aspx.designer.cs">
+      <DependentUpon>Mess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programming.aspx.cs">
+      <DependentUpon>Programming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programming.aspx.designer.cs">
+      <DependentUpon>Programming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stationary.aspx.cs">
+      <DependentUpon>Stationary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stationary.aspx.designer.cs">
+      <DependentUpon>Stationary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student login.aspx.cs">
+      <DependentUpon>student login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student login.aspx.designer.cs">
+      <DependentUpon>student login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentregister.aspx.cs">
+      <DependentUpon>studentregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentregister.aspx.designer.cs">
+      <DependentUpon>studentregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xerox.aspx.cs">
+      <DependentUpon>Xerox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xerox.aspx.designer.cs">
+      <DependentUpon>Xerox.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Homepage.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="icon\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49714</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49714/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
